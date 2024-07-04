@@ -100,3 +100,25 @@ botaopop.addEventListener('click', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const confirmYesButton = document.getElementById('sim');
+    const confirmNoButton = document.getElementById('nao');
+    const confirmationContainer = document.getElementById('click-div');
+    const messageContainer = document.getElementById('message-confirm');
+
+    confirmYesButton.addEventListener('click', () => {
+        confirmationContainer.style.display = 'none';
+        messageContainer.style.display = 'block';
+    });
+
+    confirmNoButton.addEventListener('click', () => {
+        messageContainer.style.display = 'none';
+        confirmationContainer.style.display = 'block';
+    });
+});
+
+
+
+
+
+
