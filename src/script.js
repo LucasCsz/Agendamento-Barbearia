@@ -81,7 +81,7 @@ botao6.addEventListener('click', function () {
     }
 });
 
-//BOTÃO POP-UP "segunda"
+//Botão POP-UP "Segunda"
 var botaopop = document.getElementById('click-pop');
 
 var divParaMostrarpop = document.getElementById('click-div');
@@ -90,32 +90,150 @@ var esconderListaHorario = document.getElementById('click1');
 
 
 botaopop.addEventListener('click', function () {
-    if (divParaMostrarpop.style.display === 'none') {   
+    if (divParaMostrarpop.style.display === 'none') {
         divParaMostrarpop.style.display = 'block';
         esconderListaHorario.style.display = 'none';
-     
+
     } else {
         divParaMostrarpop.style.display = 'none';
     }
 });
 
+//Botão POP-UP "Terça"
+var botãoEnviarTerça = document.getElementById('btn-terca');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const confirmYesButton = document.getElementById('sim');
-    const confirmNoButton = document.getElementById('nao');
-    const confirmationContainer = document.getElementById('click-div');
-    const messageContainer = document.getElementById('message-confirm');
+var divParaMostrarpop1 = document.getElementById('click-div');
 
-    confirmYesButton.addEventListener('click', () => {
-        confirmationContainer.style.display = 'none';
-        messageContainer.style.display = 'block';
-    });
+var esconderListaHorario1 = document.getElementById('click2');
 
-    confirmNoButton.addEventListener('click', () => {
-        messageContainer.style.display = 'none';
-        confirmationContainer.style.display = 'block';
-    });
+
+botãoEnviarTerça.addEventListener('click', function () {
+    if (divParaMostrarpop1.style.display === 'none') {
+        divParaMostrarpop1.style.display = 'block';
+        esconderListaHorario1.style.display = 'none';
+
+    } else {
+        divParaMostrarpop1.style.display = 'none';
+    }
 });
+
+//Botão POP-UP "Quarta"
+var botãoEnviarQuarta = document.getElementById('btn-quarta');
+
+var divParaMostrarpop2 = document.getElementById('click-div');
+
+var esconderListaHorario2 = document.getElementById('click3');
+
+
+botãoEnviarQuarta.addEventListener('click', function () {
+    if (divParaMostrarpop2.style.display === 'none') {
+        divParaMostrarpop2.style.display = 'block';
+        esconderListaHorario2.style.display = 'none';
+
+    } else {
+        divParaMostrarpop2.style.display = 'none';
+    }
+});
+
+//Botão POP-UP "Quinta"
+var botãoEnviarQuinta = document.getElementById('btn-quinta');
+
+var divParaMostrarpop3 = document.getElementById('click-div');
+
+var esconderListaHorario3 = document.getElementById('click4');
+
+
+botãoEnviarQuinta.addEventListener('click', function () {
+    if (divParaMostrarpop3.style.display === 'none') {
+        divParaMostrarpop3.style.display = 'block';
+        esconderListaHorario3.style.display = 'none';
+
+    } else {
+        divParaMostrarpop3.style.display = 'none';
+    }
+});
+
+//Botão POP-UP "Sexta"
+var botãoEnviarSexta = document.getElementById('btn-sexta');
+
+var divParaMostrarpop4 = document.getElementById('click-div');
+
+var esconderListaHorario4 = document.getElementById('click5');
+
+
+botãoEnviarSexta.addEventListener('click', function () {
+    if (divParaMostrarpop4.style.display === 'none') {
+        divParaMostrarpop4.style.display = 'block';
+        esconderListaHorario4.style.display = 'none';
+
+    } else {
+        divParaMostrarpop4.style.display = 'none';
+    }
+});
+
+//Botão POP-UP "Sábado"
+var botãoEnviarSabado = document.getElementById('btn-sabado');
+
+var divParaMostrarpop5 = document.getElementById('click-div');
+
+var esconderListaHorario5 = document.getElementById('click6');
+
+
+botãoEnviarSabado.addEventListener('click', function () {
+    if (divParaMostrarpop5.style.display === 'none') {
+        divParaMostrarpop5.style.display = 'block';
+        esconderListaHorario5.style.display = 'none';
+
+    } else {
+        divParaMostrarpop5.style.display = 'none';
+    }
+});
+
+
+
+//Botão Digitar nome
+var botaoSim = document.getElementById('sim');
+
+var divParaName = document.getElementById('option-name');
+
+var esconderDiv = document.getElementById('click-div');
+
+
+botaoSim.addEventListener('click', function () {
+    if (divParaName.style.display === 'none') {
+        divParaName.style.display = 'block';
+        esconderDiv.style.display = 'none';
+
+    } else {
+        divParaName.style.display = 'none';
+    }
+});
+
+
+//Botão aparecer horário marcado
+var botaoEnviar = document.getElementById('enviar');
+
+var divHorario = document.getElementById('message-confirm');
+
+var esconderOption = document.getElementById('option-name');
+
+
+botaoEnviar.addEventListener('click', function () {
+    if (divHorario.style.display === 'none') {
+        divHorario.style.display = 'block';
+        esconderOption.style.display = 'none';
+
+    } else {
+        divHorario.style.display = 'none';
+    }
+});
+
+
+
+
+
+
+
 
 
 
