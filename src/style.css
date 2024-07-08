@@ -6,9 +6,7 @@
 }
 
 body {
-    background: #000;
-    
-  
+    background: #000623;
 }
 
 /*RESPONSIVIDADE*/
@@ -21,6 +19,7 @@ body {
     #message-confirm {
         text-align: center;
         padding: 4vw;
+        min-width: 70vw;
     }
 
     .title {
@@ -39,13 +38,13 @@ body {
 
     #option-name {
         padding: 15px;
-        width: 73vw;
+        min-width: 73vw;
         
     }
 
     #enviar {
         padding: 2vw;
-        width: 21vw;
+        min-width: 21vw;
     }
 
     #btn-button2 {
@@ -152,19 +151,43 @@ body {
         margin-top: 10px;
     }
 
+    .cards-images {
+        min-width: 40%;
+    }
+
+    .div-images {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .img-cards {
+        margin-bottom: 5vw;
+    }
+
 }   
 
 
 /*cabeçalho*/
+
+p {
+    color: #fff;
+}
+
 .hd-logo {
     display: flex;
-    justify-content: center;
-    background: #fff;
+    background: #000;
+}
+
+
+h1 {
+    margin-top: 3px;
+    color: #fff;
 }
 
 .image-logo {
     width: 8vw;
-    border-radius: 20%;
 }
 
 .title {
@@ -176,7 +199,7 @@ body {
 
 /*lista de horários*/
 .times {
-    background: #d3d3d3;
+    background: #d3d3d3 !important;
     width: 13%;
     text-align: center;
     display: none;
@@ -234,14 +257,14 @@ body {
     width: 56%;
     padding: 4%;
     border-radius: 10px;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
 }
 
 .btn-times:hover {
     cursor: pointer;
-    background: #fff;
-    color: #000;
+    background: #000;
+    color: #fff;
 }
 
 .btn-list {
@@ -273,8 +296,8 @@ body {
 
 #btn-button2:hover {
     cursor: pointer;
-    background: #000;
-    color: #fff;
+    background: #d2d2d2;
+    color: #000;
 }
 
 #btn-button3 {
@@ -383,7 +406,8 @@ input {
 
 #message-confirm {
     display: none;
-    background: #dfdddd;
+    background: #000;
+    color: #fff;
     text-align: center;
     font-size: 17px;
     padding: 12px;
@@ -395,7 +419,7 @@ input {
 
 /*Footer*/
 .foot {
-    background: #fff;
+    background: #000;
     width: 100%;
     height: 2vw;
     text-align: center;
@@ -403,7 +427,7 @@ input {
 }
 
 footer p {
-    color: #000
+    color: #fff;
     
 }
 
@@ -422,7 +446,7 @@ input {
     margin-top: 15px;
     text-align: center;
     display: none;
-    background: #dfdddd;
+    background: #d3d3d3;
     padding: 15px;
     width: 30vw;
     border-radius: 6px;
@@ -445,3 +469,19 @@ input {
     align-items: center;
 }
 
+.div-images {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cards-images {
+    width: 64%;
+    border-radius: 6px;
+}
+
+.cards-images:hover {
+    cursor: pointer;
+    opacity: 1.1;
+}
