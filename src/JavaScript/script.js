@@ -243,6 +243,22 @@ botaoEnviar.addEventListener('click', function () {
     }
 });
 
+var botaoAgendamento = document.getElementById('click-list');
+
+var sectionDiv = document.getElementById('click-section');
+
+
+
+botaoAgendamento.addEventListener('click', function () {
+    if (sectionDiv .style.display === 'none') {
+        sectionDiv .style.display = 'block';
+        botaoAgendamento.style.display = 'none';
+
+    } else {
+        sectionDiv.style.display = 'none';
+    }
+});
+
 
 
 
