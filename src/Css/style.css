@@ -2,16 +2,21 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
-body {
-    background-image: url('/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
+
+.container-body {
+    flex: 1;
+    background: #d3d3d3;
+}
+
 
 .list-link {
     display: none;
@@ -22,6 +27,19 @@ body {
     justify-content: space-around;
     color: #000;
     flex-direction: row;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 
@@ -30,10 +48,55 @@ body {
 /*RESPONSIVIDADE*/
 @media (max-width: 768px) {
 
+    .icons {
+        margin-right: 54vw;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+
+    }
+
+    span {
+        margin-right: 15px;
+    }
 
 
     .logo-header {
         min-width: 22vw;
+        margin-top:-49px
     }
 
     #message-confirm {
@@ -191,8 +254,13 @@ body {
 
 /*cabeçalho*/
 
-header {
-    background: #fff ;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
 }
 
 li {
@@ -205,7 +273,7 @@ ul {
 }
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -225,10 +293,32 @@ ul {
 
 .icon-picture:hover {
     cursor: pointer;
-    background: #696969;
+    background: #d2d2d2;
     border-radius: 6px;
     
 }
+
+.nav-header {
+    padding: 7px;
+}
+
+.nav-header:hover {
+    cursor: pointer;
+    background: #d2d2d2;
+    border-radius: 6px;
+}
+
+.nav-header1 {
+    padding: 7px;
+}
+
+.nav-header1:hover {
+    cursor: pointer;
+    background: #d2d2d2;
+    border-radius: 6px;
+}
+
+
 
 .contato {
     width: 50%;
@@ -254,7 +344,7 @@ h1 {
 }
 
 .logo-header {
-    width: 10vw;
+    width: 8vw;
 }
 
 .title {
@@ -266,7 +356,7 @@ h1 {
 
 /*lista de horários*/
 .times {
-    background: #d3d3d3 !important;
+    background: #a5a5a5 !important;
     width: 13%;
     text-align: center;
     display: none;
@@ -320,6 +410,11 @@ h1 {
     margin-top: 10px;
 }
 
+.button-list {
+    display: flex;
+    justify-content: center;
+}
+
 .btn-times {
     width: 56%;
     padding: 4%;
@@ -337,6 +432,22 @@ h1 {
 .btn-list {
     display: flex;
     justify-content: space-around;
+}
+
+
+
+.click-agenda {
+    padding: 1vw;
+    width: 9vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    border-radius: 14px;
+}
+
+.click-agenda:hover {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
 }
 
 
@@ -429,7 +540,7 @@ input {
 }
 /*POP UP*/
 #click-div {
-    background: #dfdddd;
+    background: #a5a5a5;
     padding: 3vw;
     width: 26vw;
     border-radius: 11px;
@@ -471,9 +582,11 @@ input {
     cursor: pointer;
 }
 
+
+
 #message-confirm {
     display: none;
-    background: #000;
+    background: #a5a5a5;
     color: #fff;
     text-align: center;
     font-size: 17px;
@@ -491,6 +604,14 @@ input {
     height: 2vw;
     text-align: center;
     margin-top: 1vw;
+}
+
+footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 footer p {
@@ -513,7 +634,7 @@ input {
     margin-top: 15px;
     text-align: center;
     display: none;
-    background: #d3d3d3;
+    background: #a5a5a5;
     padding: 15px;
     width: 30vw;
     border-radius: 6px;
@@ -551,4 +672,32 @@ input {
 .cards-images:hover {
     cursor: pointer;
     opacity: 1.1;
+}
+
+.container-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.elements1, .elements2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.elements-div {
+    width: 30vw;
+    height: 22vw;
+    background-color: #333;
+    color: white;
+    display: flex;
+  
+    justify-content: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.service-title {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
 }

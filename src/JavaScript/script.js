@@ -1,17 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('toggleButton');
-    const hiddenDivs = document.querySelectorAll('.icons');
-  
-    toggleButton.addEventListener('click', function() {
-      hiddenDivs.forEach(function(div) {
-        if (div.style.display === 'block') {
-          div.style.display = 'none';
-        } else {
-          div.style.display = 'block';
-        }
-      });
-    });
-  });
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-list').classList.toggle('show');
+});
 
 //SEGUNDA-FEIRA
 var botao1 = document.getElementById('btn-button1');
