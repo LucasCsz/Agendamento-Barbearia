@@ -96,7 +96,7 @@ html, body {
 
     .logo-header {
         min-width: 22vw;
-        margin-top:-49px
+        margin-top:-49px;
     }
 
     #message-confirm {
@@ -249,8 +249,45 @@ html, body {
         margin-bottom: 5vw;
     }
 
-}   
+    .click-agenda {
+        min-width: 29vw;
+        min-height: 13vw;
+    }
 
+    /*page serviços*/
+    .icon {
+        width: 9vw;
+    }
+
+    /*Page Sobre*/
+    .localizacao {
+        max-width: 100%;
+        min-height: 86vw;
+        margin: 1vw;
+    }
+
+    .produtos {
+        max-width: 100%;
+        min-height: 86vw;
+        margin: 1vw;
+    }
+
+    .studio {
+        max-width: 100%;
+        min-height: 86vw;
+        margin: 1vw;
+    }
+
+    .name-video {
+        text-align: center;
+    }
+
+    .stream {
+        min-height: 100vw;
+        min-width: 100%;
+    }
+
+}
 
 /*cabeçalho*/
 
@@ -261,6 +298,17 @@ html, body {
     padding: 10px 20px;
     background-color: white;
     border-bottom: 1px solid #ddd;
+}
+
+.icon {
+    display: flex;
+    margin-left: 2vw;
+    padding: 4px;
+}
+
+.icon:hover {
+    background: #d2d2d2;
+    border-radius: 50%;
 }
 
 li {
@@ -310,6 +358,8 @@ ul {
 
 .nav-header1 {
     padding: 7px;
+    text-decoration: none;
+    color: #000;
 }
 
 .nav-header1:hover {
@@ -363,6 +413,7 @@ h1 {
     font-size: 18px;
     border-radius: 7px;
     padding: 3px;
+    margin-bottom: 4vw;
 }
 
 .align-list {
@@ -548,6 +599,7 @@ input {
     margin-top: 10px;
     text-align: center;
     display: none;
+    margin-bottom: 4vw;
 }
 
 .button-pop {
@@ -594,7 +646,13 @@ input {
     width: 52vw;
     border-radius: 6px;
     margin-top: 10px;
+    margin-bottom: 4vw;
 
+}
+
+.text-decoration {
+    text-decoration: none;
+    color: #000;
 }
 
 /*Footer*/
@@ -638,6 +696,7 @@ input {
     padding: 15px;
     width: 30vw;
     border-radius: 6px;
+    margin-bottom: 4vw;
 }
 
 #enviar {
@@ -685,19 +744,62 @@ input {
     align-items: center;    
 }
 .elements-div {
-    width: 30vw;
-    height: 22vw;
+    width: 93vw;
+    height: 32vw;
     background-color: #333;
     color: white;
     display: flex;
-  
     justify-content: center;
     margin: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 .service-title {
     width: 100%;
     margin-bottom: 20px;
     font-size: 30px;
     text-align: center;
+}
+
+/*Page Sobre*/
+
+
+.stream-video {
+    width: 97vw;
+    height: 30vw;
+    margin: 2vw;
+}
+
+.stream {
+    margin: 1vw;
+    width: 26vw;
+    height: 42vw;
+}
+
+.name-video{
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 3px;
+}
+
+.localizacao {
+    background: #000;
+    width: 98%;
+    border-radius: 5px;
+    margin-right: 1vw;
+    display: flex;
+}
+
+.produtos {
+    background: #000;
+    width: 98%;
+    border-radius: 5px;
+    margin-right: 1vw;
+}
+
+
+.studio {
+    background: #000;
+    width: 98%;
+    border-radius: 5px;
+    margin-right: 1vw
 }
